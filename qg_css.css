@@ -8,9 +8,10 @@ html {
   margin-top: 50px;
   border-radius: 3px;
   align-content: center;
+  color: white;
 }
 .buttons {
-  color: red;
+  color: white;
   width: auto;
   height:auto;
   max-width: 250px;
@@ -19,20 +20,22 @@ html {
   left: 50%;
   font-size: 35px;
   border-radius: 15px;
-  border: 2px solid red;
+  border: 2px solid white;
   margin: 0 auto;
   white-space: nowrap;
 
 }
 .buttons:hover {
-  color: green;
+  color: black;
 }
 #quoteDisplay {
   font-size-adjust: auto;
   font-size: 100%;
-  white-space: pre-line;
   width: auto;
   height: auto;
   text-align: center;
   font-size: 55px;
+}
+#newQuote {
+  margin-bottom: 15px;
 }
