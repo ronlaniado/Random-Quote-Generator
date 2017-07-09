@@ -4,7 +4,7 @@ html {
 .quoteBox {
   height: auto;
   width: 600px;
-  margin: auto;
+  margin: 0 auto;
   margin-top: 50px;
   border-radius: 3px;
   align-content: center;
@@ -18,11 +18,11 @@ html {
   top: auto;
   left: 50%;
   font-size: 35px;
-  white-space: nowrap;
   border-radius: 15px;
   border: 2px solid red;
-  overflow: hidden;
-  float: left;
+  margin: 0 auto;
+  white-space: nowrap;
+
 }
 .buttons:hover {
   color: green;
