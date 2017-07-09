@@ -4,6 +4,7 @@ function getNewQuote() {
   $.ajax({
     url: 'http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1',
     jsonp: 'jsonp',
+    cache: 'false',
     success: function(data) {
       var post = data.shift();
       $("#quoteTitle").append(post.title);
@@ -11,6 +12,6 @@ function getNewQuote() {
     }
   });
 }
-
-$("#newQuote").click(getNewQuote());
+getNewQuote();
+//$("#newQuote").click(getNewQuote());
 })
