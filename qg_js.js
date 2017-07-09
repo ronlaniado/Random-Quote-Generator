@@ -6,13 +6,11 @@ function getNewQuote() {
     jsonp: 'jsonp',
     success: function(data) {
       var post = data.shift();
-      $("#quoteTitle").text(post.title);
-      $("#quoteDisplay").text(post.content);
+      $("#quoteTitle").append(post.title);
+      $("#quoteDisplay").append(post.content);
     }
   });
 }
-getNewQuote();
-
 
 $("#newQuote").click(getNewQuote());
 })
