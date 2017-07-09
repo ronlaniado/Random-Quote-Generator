@@ -11,6 +11,7 @@ html {
   font-size: 14px;
   font-weight: normal;
 }
+.quoteBox {
   height: auto;
   width: 600px;
   background-color: #e2e0dc;
