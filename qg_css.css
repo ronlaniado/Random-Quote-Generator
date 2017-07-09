@@ -1,0 +1,38 @@
+html {
+  background-color: #553973;
+  font-family: 'Dosis', sans-serif;}
+.quoteBox {
+  height: auto;
+  width: 600px;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 3px;
+  align-content: center;
+}
+.buttons {
+  color: red;
+  width: auto;
+  height:auto;
+  max-width: 250px;
+  text-align: center;
+  top: auto;
+  left: 50%;
+  font-size: 35px;
+  white-space: nowrap;
+  border-radius: 15px;
+  border: 2px solid red;
+  overflow: hidden;
+  float: left;
+}
+.buttons:hover {
+  color: green;
+}
+#quoteDisplay {
+  font-size-adjust: auto;
+  font-size: 100%;
+  white-space: pre-line;
+  width: auto;
+  height: auto;
+  text-align: center;
+  font-size: 55px;
+}
