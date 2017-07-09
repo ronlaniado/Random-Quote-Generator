@@ -1,0 +1,32 @@
+html {
+  background-color: #553973;
+}
+.title {
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  font-size: 48px;
+  font-weight: bold;
+}
+.author {
+  font-size: 14px;
+  font-weight: normal;
+}
+  height: auto;
+  width: 600px;
+  background-color: #e2e0dc;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 3px;
+}
+#newQuote {
+  color: red;
+  width: auto;
+  height:auto;
+  max-width: 250px;
+  background-color: black;
+  text-align: center;
+  position: absolute;
+  top: auto;
+  left: 50%;
+}
+/* Hello */
