@@ -4,14 +4,18 @@ function getNewQuote() {
   $.ajax({
     url: 'http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1',
     jsonp: 'jsonp',
-    cache: 'false',
     success: function(data) {
       var post = data.shift();
+      $("#quoteTitle").empty();
+      $("#quoteDisplay").empty();
       $("#quoteTitle").append(post.title);
       $("#quoteDisplay").append(post.content);
     }
   });
 }
 getNewQuote();
-//$("#newQuote").click(getNewQuote());
+$("#newQuote").on("click", function(event) {
+  event.preventDefault();
+  getNewQuote();
+});
 })
