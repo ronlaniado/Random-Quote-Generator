@@ -4,7 +4,7 @@ function getNewQuote() {
   $.ajax({
     url: 'https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1',
     jsonp: 'jsonp',
-    cache: 'false',
+    cache: false,
     success: function(data) {
       var post = data.shift();
       $("#quoteTitle").empty();
