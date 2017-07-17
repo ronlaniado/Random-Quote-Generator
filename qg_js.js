@@ -14,10 +14,20 @@ function getNewQuote() {
     }
   });
 }
+function changeBackground() {
+  console.log("changeBackground() function is working");
+  var backgrounds = ["navy", "blue", "aqua", "teal", "olive", "green", "lime", "yellow", "orange", "red", "maroon", "fuchsia", "purple"];
+  var randomBG = backgrounds[Math.floor(Math.random() * backgrounds.length)];
+  $("html").css('background-color',randomBG);}
+  $('#click').click(function () {changeBackground()});
+
 getNewQuote();
+changeBackground();
+
 
 $('#newQuote').on('click', function(e) {
   e.preventDefault();
+  changeBackground();
   getNewQuote();
 });
 })

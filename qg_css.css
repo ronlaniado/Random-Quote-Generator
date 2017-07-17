@@ -1,5 +1,5 @@
 html {
-  background-color: #553973;
+  transition: background-color 5s ease;
   font-family: 'Dosis', sans-serif;}
 .quoteBox {
   height: auto;
