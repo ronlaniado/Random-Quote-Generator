@@ -14,7 +14,7 @@ function getNewQuote() {
   });
 }
 function changeBackground() {
-  var backgrounds = ["navy", "blue", "aqua", "teal", "olive", "green", "lime", "yellow", "orange", "red", "maroon", "fuchsia", "purple"];
+  var backgrounds = ["navy", "blue", "aqua", "teal", "olive", "green", "lime", "orange", "red", "maroon", "fuchsia", "purple"];
   var randomBG = backgrounds[Math.floor(Math.random() * backgrounds.length)];
   $("html").css('background-color',randomBG);}
   $('#click').click(function () {changeBackground()});
